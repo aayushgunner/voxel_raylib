@@ -1,11 +1,11 @@
-CC = gcc
+CC = g++
 CFLAGS = -lraylib -lm
 TARGET = main
 
 all: $(TARGET)
 
-$(TARGET): main.c
-	$(CC) main.c -o $(TARGET) $(CFLAGS)
+$(TARGET): main.cpp
+	$(CC) main.cpp -o $(TARGET) $(CFLAGS)
 
 run: $(TARGET)
 	./$(TARGET)
